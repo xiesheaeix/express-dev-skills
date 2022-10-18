@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  border: 5px solid #00B7FF;
 }
 
 a {
   color: #00B7FF;
+}
+
+ul {
+  list-style: none;
+  margin-right: 40px;
+}
+
+a:hover {
+  text-shadow: 0 0 5px black;
 }
