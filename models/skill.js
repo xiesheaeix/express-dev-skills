@@ -9,14 +9,31 @@ const skills = [
 
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    create,
+    deleteOne
 };
 
-function getAll() {
-    return skills;
+function deleteOne(id) {
+    id = parseInt(id);
+    const idx = skills.findIndex(skill => skill.id === id);
+    skills.splice(idx, 1);
 }
+
+function create(skill) {
+    skill.name = skill.skill;
+    skill.id = Date.now() % 100000;
+    skill.done = false;
+    skill.description = skill.description;
+    skills.push(skill);
+}
+
 
 function getOne(id) {
     id = parseInt(id);
     return skills.find(skill => skill.id === id);
+}
+
+function getAll() {
+    return skills;
 }

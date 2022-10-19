@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Express To-Do</title>
-</head>
-<body>
-    <a href="/">Home</a>
-    <a href="/skills">Full Stack Skills</a>
-   <h3><%= skill.name %></h3>
-   <h3><%= skill.description %></h3>
-</body>
-</html>
+<%- include('../partials/header') %>
+<h3><%= skill.name %></h3>
+<h3><%= skill.description %></h3>
+<form 
+action="/skills/<%= skill.id %>?_method=DELETE" 
+method="POST"
+class="delete-form"
+>
+<button type="submit">Delete Skill</button>
+</form>
+<%- include('../partials/footer') %>
