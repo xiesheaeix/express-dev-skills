@@ -16,11 +16,9 @@ module.exports = {
 };
 
 function update(id, updateSkill) {
-    console.log(updateSkill);
     id = parseInt(id);
     const skill = skills.find(skill => skill.id === id);
     Object.assign(skill, updateSkill);
-    Object.assign(skill.description, updateSkill.description);
 }
 
 function deleteOne(id) {

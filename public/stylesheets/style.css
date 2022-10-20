@@ -1,8 +1,6 @@
-
-
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -17,4 +15,65 @@ ul {
 
 a:hover {
   text-shadow: 0 0 5px black;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.skill-list {
+  font: 25px 'Montserrat', sans-serif;
+}
+
+.text-input {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 0px;
+  border: 5px solid #00B7FF;
+  border-radius: 25px;
+}
+
+button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #00B7FF;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 15px;
+  width: 250px;
+  border: none;
+  font: 15px 'Montserrat', sans-serif;
+}
+
+button:hover {
+  -shadow: 0 0 5px black;
+}
+
+.typewriter h1 {
+  font: 30px 'Montserrat', sans-serif;
+  overflow: hidden;
+  border-right: .15em solid #00B7FF;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end 8;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00B7FF }
 }

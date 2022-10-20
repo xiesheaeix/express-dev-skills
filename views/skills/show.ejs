@@ -1,12 +1,16 @@
 <%- include('../partials/header') %>
-<h3><%= skill.name %></h3>
+<h1><%= skill.name %></h1>
 <h3><%= skill.description %></h3>
 <form 
 action="/skills/<%= skill.id %>?_method=DELETE" 
 method="POST"
 class="delete-form"
 >
+<h3><%= skill.learned ? 'Learned' : 'Need to Learn' %></h3>
 <button type="submit">Delete Skill</button>
 </form>
-<a href="/skills/<%= skill.id %>/edit">Edit Skill</a>
+<button
+    onclick="location.href='/skills/<%= skill.id %>/edit';">Edit Skill
+</button>
+    
 <%- include('../partials/footer') %>
