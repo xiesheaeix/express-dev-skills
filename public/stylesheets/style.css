@@ -2,10 +2,7 @@ body {
   padding: 50px;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
-}
-
-a {
-  color: #00B7FF;
+  background-color: slategray;
 }
 
 ul {
@@ -13,20 +10,31 @@ ul {
   margin-right: 40px;
 }
 
+a {
+  color: #00B7FF;
+}
+
 a:hover {
   text-shadow: 0 0 5px black;
 }
 
 .nav-bar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
+  height: 40px;
+  background-color: black;
+  font-size: 25px;
+}
+
+.nav-bar a:link {
+  text-decoration: none;
 }
 
 .skill-list {
   font: 25px 'Montserrat', sans-serif;
+  color: #00B7FF;
 }
 
 .text-input {
